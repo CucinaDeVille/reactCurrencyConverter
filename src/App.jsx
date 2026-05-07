@@ -21,9 +21,9 @@ const App = () => {
 
             for (let i = 0; i < moneyArray.length; i++) {
                 const button = <Button myText={moneyArray[i]} callBack={() => {
-                    null
-                    null
-                    null
+                    setMoney(moneyArray[i]);
+                    setConvertedMoney(moneyArray[i]);
+                    setCurrencyString("€");
                 }}> </Button>;
                 buttonArray.push(button);
             }
