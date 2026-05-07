@@ -48,15 +48,15 @@ const App = () => {
             <Button
                 myText={"Pfund"}
                 callBack={() => {
-                   null
-                   null
+                   setConvertedMoney(euroToPfund(money));
+                   setCurrencyString("£");
                 }}
             />
             <Button
                 myText={"Euro"}
                 callBack={() => {
-                    null
-                    null
+                    setConvertedMoney(money);
+                    setCurrencyString("€");
                 }}
             />
         </div>
