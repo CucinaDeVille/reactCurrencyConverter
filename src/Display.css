@@ -1,0 +1,12 @@
+.Counter {
+  padding: 20px;
+  border-radius: 25%;
+  background-color: rgb(198, 220, 238);
+}
+
+.CounterNum {
+color: rgb(0, 10, 14);
+font-size: 48px;
+font-family: monospace;
+text-align: center;
+}
