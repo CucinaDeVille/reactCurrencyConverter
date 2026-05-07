@@ -2,7 +2,7 @@ import Display from "./Display";
 import Button from "./Button";
 import {useState} from "react";
 
-const App = () => {
+export default function App () {
 
     // value in euros
     const [money, setMoney] = useState(0);
@@ -21,7 +21,7 @@ const App = () => {
         return (num * 0.8782).toFixed(2);
     };
 
-    const createMoneyButtons = () => {
+    function createMoneyButtons () {
             const moneyArray = [10, 20, 50, 100, 200, 500];
 
             // either use parentheses () with IMPLICIT return (requires no "return")
@@ -40,7 +40,7 @@ const App = () => {
                     }}
                 />
             ));
-    };
+    }
 
     return (
         <div>
@@ -81,6 +81,4 @@ const App = () => {
             />
         </div>
     );
-};
-
-export default App;
+}

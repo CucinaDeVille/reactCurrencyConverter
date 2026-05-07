@@ -1,11 +1,9 @@
 import "./Button.css";
 
-const Button = (props) => {
+export default function Button (props) {
   return (
     <button className="CounterNum" onClick={ props.callBack }>
       { props.myText }
     </button>
   );
-};
-
-export default Button;
+}
