@@ -3,7 +3,7 @@ import "./Display.css";
 const Display = (props) => {
   return (
     <div className="CounterNum Counter">
-      Geld: { null } { null }
+      Geld: { props.money } { props.currency }
       <br></br>
     </div>
   );

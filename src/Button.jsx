@@ -2,7 +2,7 @@ import "./Button.css";
 
 const Button = (props) => {
   return (
-    <button className="CounterNum" onClick={ null }>
+    <button className="CounterNum" onClick={ props.callBack }>
       { props.myText }
     </button>
   );
