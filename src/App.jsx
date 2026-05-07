@@ -16,18 +16,19 @@ const App = () => {
     };
 
     const createMoneyButtons = () => {
-            const buttonArray = [];
             const moneyArray = [10, 20, 50, 100, 200, 500];
 
-            for (let i = 0; i < moneyArray.length; i++) {
-                const button = <Button myText={moneyArray[i]} callBack={() => {
-                    setMoney(moneyArray[i]);
-                    setConvertedMoney(moneyArray[i]);
-                    setCurrencyString("€");
-                }}> </Button>;
-                buttonArray.push(button);
-            }
-            return buttonArray;
+            return moneyArray.map((item, index) => (
+                 <Button
+                    key={index}
+                    myText={item}
+                    callBack={() => {
+                        setMoney(moneyArray[index]);
+                        setConvertedMoney(moneyArray[index]);
+                        setCurrencyString("€");
+                    }}
+                />
+            ));
         }
     ;
 
