@@ -18,6 +18,8 @@ const App = () => {
     const createMoneyButtons = () => {
             const moneyArray = [10, 20, 50, 100, 200, 500];
 
+            // either use parentheses () with implicit return (requires no "return")
+            // or use curly braces {} that require you to explicitly write "return" in front of <Button.../>
             return moneyArray.map((item, index) => (
                  <Button
                     key={index}
