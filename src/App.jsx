@@ -1,5 +1,6 @@
 import Display from "./Display";
 import Button from "./Button";
+import {useState} from "react";
 
 const App = () => {
     const [money, setMoney] = useState(0);
